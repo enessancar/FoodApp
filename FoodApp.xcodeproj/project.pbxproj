@@ -13,6 +13,9 @@
 		ECA91A082AC3375700AA4F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA91A072AC3375700AA4F42 /* Assets.xcassets */; };
 		ECA91A0B2AC3375700AA4F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA91A092AC3375700AA4F42 /* LaunchScreen.storyboard */; };
 		ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A142AC36C3C00AA4F42 /* UILabel+Ext.swift */; };
+		ECA91A172AC36D2C00AA4F42 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A162AC36D2C00AA4F42 /* String+Ext.swift */; };
+		ECA91A1A2AC36E2A00AA4F42 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A192AC36E2A00AA4F42 /* Category.swift */; };
+		ECA91A1C2AC36E8800AA4F42 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A1B2AC36E8800AA4F42 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		ECA91A0A2AC3375700AA4F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA91A0C2AC3375700AA4F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECA91A142AC36C3C00AA4F42 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		ECA91A162AC36D2C00AA4F42 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		ECA91A192AC36E2A00AA4F42 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ECA91A1B2AC36E8800AA4F42 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,9 @@
 		ECA919FD2AC3375500AA4F42 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				ECA91A132AC36C2800AA4F42 /* Extensions */,
 				ECA91A122AC36AC000AA4F42 /* Support */,
+				ECA91A132AC36C2800AA4F42 /* Extensions */,
+				ECA91A182AC36DC800AA4F42 /* Models */,
 				ECA91A022AC3375500AA4F42 /* ViewController.swift */,
 			);
 			path = FoodApp;
@@ -79,8 +86,18 @@
 			isa = PBXGroup;
 			children = (
 				ECA91A142AC36C3C00AA4F42 /* UILabel+Ext.swift */,
+				ECA91A162AC36D2C00AA4F42 /* String+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECA91A182AC36DC800AA4F42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A192AC36E2A00AA4F42 /* Category.swift */,
+				ECA91A1B2AC36E8800AA4F42 /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +173,10 @@
 				ECA91A032AC3375500AA4F42 /* ViewController.swift in Sources */,
 				ECA919FF2AC3375500AA4F42 /* AppDelegate.swift in Sources */,
 				ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */,
+				ECA91A172AC36D2C00AA4F42 /* String+Ext.swift in Sources */,
 				ECA91A012AC3375500AA4F42 /* SceneDelegate.swift in Sources */,
+				ECA91A1A2AC36E2A00AA4F42 /* Category.swift in Sources */,
+				ECA91A1C2AC36E8800AA4F42 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
