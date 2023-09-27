@@ -21,6 +21,9 @@
 		ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A242AC3717300AA4F42 /* UIHelper.swift */; };
 		ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A272AC4062100AA4F42 /* CategoryService.swift */; };
 		ECA91A2A2AC40B0800AA4F42 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A292AC40B0800AA4F42 /* ProductService.swift */; };
+		ECA91A2F2AC4114C00AA4F42 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A2E2AC4114C00AA4F42 /* TabBarController.swift */; };
+		ECA91A322AC411D000AA4F42 /* DataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A312AC411D000AA4F42 /* DataLoadingVC.swift */; };
+		ECA91A352AC4133000AA4F42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA91A342AC4133000AA4F42 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,8 @@
 		ECA91A242AC3717300AA4F42 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		ECA91A272AC4062100AA4F42 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		ECA91A292AC40B0800AA4F42 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		ECA91A2E2AC4114C00AA4F42 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		ECA91A312AC411D000AA4F42 /* DataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA91A352AC4133000AA4F42 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 				ECA91A182AC36DC800AA4F42 /* Models */,
 				ECA91A1D2AC36F6800AA4F42 /* Utils */,
 				ECA91A262AC4060900AA4F42 /* Service */,
+				ECA91A2B2AC4110000AA4F42 /* Core */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
@@ -131,6 +138,39 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		ECA91A2B2AC4110000AA4F42 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A2C2AC4111C00AA4F42 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ECA91A2C2AC4111C00AA4F42 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A2D2AC4112500AA4F42 /* TabBar */,
+				ECA91A302AC411BA00AA4F42 /* ViewController */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		ECA91A2D2AC4112500AA4F42 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A2E2AC4114C00AA4F42 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		ECA91A302AC411BA00AA4F42 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A312AC411D000AA4F42 /* DataLoadingVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +187,9 @@
 			dependencies = (
 			);
 			name = FoodApp;
+			packageProductDependencies = (
+				ECA91A342AC4133000AA4F42 /* SnapKit */,
+			);
 			productName = FoodApp;
 			productReference = ECA919FB2AC3375500AA4F42 /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +218,9 @@
 				Base,
 			);
 			mainGroup = ECA919F22AC3375500AA4F42;
+			packageReferences = (
+				ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ECA919FC2AC3375500AA4F42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA919FF2AC3375500AA4F42 /* AppDelegate.swift in Sources */,
+				ECA91A2F2AC4114C00AA4F42 /* TabBarController.swift in Sources */,
 				ECA91A212AC3706100AA4F42 /* CustomError.swift in Sources */,
+				ECA91A322AC411D000AA4F42 /* DataLoadingVC.swift in Sources */,
 				ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */,
 				ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */,
 				ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */,
@@ -426,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECA91A342AC4133000AA4F42 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECA919F32AC3375500AA4F42 /* Project object */;
 }
