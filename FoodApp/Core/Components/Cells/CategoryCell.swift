@@ -30,7 +30,6 @@ final class CategoryCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        backgroundColor = .secondarySystemBackground
         
         titleLabel.text = nil
         categoryImageView.image = nil

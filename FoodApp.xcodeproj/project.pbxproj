@@ -23,10 +23,11 @@
 		ECA91A2A2AC40B0800AA4F42 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A292AC40B0800AA4F42 /* ProductService.swift */; };
 		ECA91A2F2AC4114C00AA4F42 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A2E2AC4114C00AA4F42 /* TabBarController.swift */; };
 		ECA91A322AC411D000AA4F42 /* DataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A312AC411D000AA4F42 /* DataLoadingVC.swift */; };
-		ECA91A352AC4133000AA4F42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA91A342AC4133000AA4F42 /* SnapKit */; };
 		ECA91A382AC413EB00AA4F42 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A372AC413EB00AA4F42 /* CategoryCell.swift */; };
 		ECA91A3B2AC4271300AA4F42 /* FCImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3A2AC4271300AA4F42 /* FCImageView.swift */; };
 		ECA91A3D2AC427E000AA4F42 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3C2AC427E000AA4F42 /* CacheManager.swift */; };
+		ECA91A3F2AC442A500AA4F42 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */; };
+		ECA91A422AC464C800AA4F42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA91A412AC464C800AA4F42 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		ECA91A372AC413EB00AA4F42 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		ECA91A3A2AC4271300AA4F42 /* FCImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCImageView.swift; sourceTree = "<group>"; };
 		ECA91A3C2AC427E000AA4F42 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA91A352AC4133000AA4F42 /* SnapKit in Frameworks */,
+				ECA91A422AC464C800AA4F42 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA91A372AC413EB00AA4F42 /* CategoryCell.swift */,
+				ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -213,7 +216,7 @@
 			);
 			name = FoodApp;
 			packageProductDependencies = (
-				ECA91A342AC4133000AA4F42 /* SnapKit */,
+				ECA91A412AC464C800AA4F42 /* SnapKit */,
 			);
 			productName = FoodApp;
 			productReference = ECA919FB2AC3375500AA4F42 /* FoodApp.app */;
@@ -244,7 +247,7 @@
 			);
 			mainGroup = ECA919F22AC3375500AA4F42;
 			packageReferences = (
-				ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				ECA91A402AC464C800AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = ECA919FC2AC3375500AA4F42 /* Products */;
 			projectDirPath = "";
@@ -287,6 +290,7 @@
 				ECA91A232AC3713600AA4F42 /* APIUrls.swift in Sources */,
 				ECA91A012AC3375500AA4F42 /* SceneDelegate.swift in Sources */,
 				ECA91A1A2AC36E2A00AA4F42 /* Category.swift in Sources */,
+				ECA91A3F2AC442A500AA4F42 /* ProductCell.swift in Sources */,
 				ECA91A1C2AC36E8800AA4F42 /* Product.swift in Sources */,
 				ECA91A382AC413EB00AA4F42 /* CategoryCell.swift in Sources */,
 			);
@@ -504,7 +508,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		ECA91A402AC464C800AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -515,9 +519,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		ECA91A342AC4133000AA4F42 /* SnapKit */ = {
+		ECA91A412AC464C800AA4F42 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECA91A332AC4133000AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = ECA91A402AC464C800AA4F42 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
