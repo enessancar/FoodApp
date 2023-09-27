@@ -18,6 +18,8 @@
 		ECA91A1F2AC36F8100AA4F42 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A1E2AC36F8100AA4F42 /* NetworkManager.swift */; };
 		ECA91A212AC3706100AA4F42 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A202AC3706100AA4F42 /* CustomError.swift */; };
 		ECA91A232AC3713600AA4F42 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A222AC3713600AA4F42 /* APIUrls.swift */; };
+		ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A242AC3717300AA4F42 /* UIHelper.swift */; };
+		ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A272AC4062100AA4F42 /* CategoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		ECA91A1E2AC36F8100AA4F42 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ECA91A202AC3706100AA4F42 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		ECA91A222AC3713600AA4F42 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
+		ECA91A242AC3717300AA4F42 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		ECA91A272AC4062100AA4F42 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				ECA91A132AC36C2800AA4F42 /* Extensions */,
 				ECA91A182AC36DC800AA4F42 /* Models */,
 				ECA91A1D2AC36F6800AA4F42 /* Utils */,
+				ECA91A262AC4060900AA4F42 /* Service */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
@@ -110,8 +115,17 @@
 				ECA91A1E2AC36F8100AA4F42 /* NetworkManager.swift */,
 				ECA91A202AC3706100AA4F42 /* CustomError.swift */,
 				ECA91A222AC3713600AA4F42 /* APIUrls.swift */,
+				ECA91A242AC3717300AA4F42 /* UIHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		ECA91A262AC4060900AA4F42 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A272AC4062100AA4F42 /* CategoryService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,8 @@
 				ECA919FF2AC3375500AA4F42 /* AppDelegate.swift in Sources */,
 				ECA91A212AC3706100AA4F42 /* CustomError.swift in Sources */,
 				ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */,
+				ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */,
+				ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */,
 				ECA91A172AC36D2C00AA4F42 /* String+Ext.swift in Sources */,
 				ECA91A1F2AC36F8100AA4F42 /* NetworkManager.swift in Sources */,
 				ECA91A232AC3713600AA4F42 /* APIUrls.swift in Sources */,
