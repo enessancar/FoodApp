@@ -1,5 +1,5 @@
 //
-//  CategoryService.swift
+//  ProductService.swift
 //  FoodApp
 //
 //  Created by Enes Sancar on 27.09.2023.
@@ -7,14 +7,13 @@
 
 import Foundation
 
-final class CategoryService {
+final class ProductService {
     
-    public func downloadCategories(urlString: String, completion: @escaping([CategoryData]) -> ()) {
-        guard let url = URL(string: urlString) else { return }
+    func downloadProducts(urlString: String, completion: @escaping([ProductData]) -> ()) {
         
+        guard let url = URL(string: urlString) else { return }
         NetworkManager.shared.download(url: url) { [weak self] result in
             guard let self else { return }
-            
             switch result {
             case .success(let data):
                 completion(self.handleWithData(data))
@@ -24,12 +23,10 @@ final class CategoryService {
         }
     }
     
-    private func handleWithData(_ data: Data) -> [CategoryData] {
+    private func handleWithData(_ data: Data) -> [ProductData] {
         do {
-            let category = try JSONDecoder().decode(Category.self, from: data)
-            guard let categoryData = category.data else {
-                return []
-            }
+            let category = try JSONDecoder().decode(Product.self, from: data)
+            guard let categoryData = category.data else { return [] }
             return categoryData
         } catch {
             print(error.localizedDescription)
