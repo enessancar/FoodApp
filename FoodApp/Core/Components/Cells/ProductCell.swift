@@ -22,6 +22,11 @@ final class ProductCell: UICollectionViewCell {
         super.init(frame: frame)
         layer.cornerRadius = 10
         backgroundColor = .secondarySystemBackground
+        
+        configureProductImageView()
+        configureTitleLabel()
+        configurePriceLabel()
+        configureCampaingPriceLabel()
     }
     
     override func prepareForReuse() {
@@ -48,7 +53,8 @@ final class ProductCell: UICollectionViewCell {
         titleLabel.text = product.title
         priceLabel.text = UIHelper.numberFormatter.string(from: NSNumber(value: product.price ?? 0))?.asTRYCurrency()
         
-        productImageView.download(urlString: product.images?.first?.use ?? "", renderingMode: .alwaysOriginal)
+        guard let urlString = product.images?.first?.use else { return }
+        productImageView.download(urlString: urlString, renderingMode: .alwaysOriginal)
         
         if let campaignPrice = product.campaignPrice {
             priceLabel.strikeThrough()

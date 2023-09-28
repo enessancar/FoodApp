@@ -28,6 +28,7 @@
 		ECA91A3D2AC427E000AA4F42 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3C2AC427E000AA4F42 /* CacheManager.swift */; };
 		ECA91A3F2AC442A500AA4F42 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */; };
 		ECA91A422AC464C800AA4F42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA91A412AC464C800AA4F42 /* SnapKit */; };
+		ECA91A442AC4C28000AA4F42 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A432AC4C28000AA4F42 /* CardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		ECA91A3A2AC4271300AA4F42 /* FCImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCImageView.swift; sourceTree = "<group>"; };
 		ECA91A3C2AC427E000AA4F42 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		ECA91A432AC4C28000AA4F42 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				ECA91A372AC413EB00AA4F42 /* CategoryCell.swift */,
 				ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */,
+				ECA91A432AC4C28000AA4F42 /* CardCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */,
 				ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */,
 				ECA91A2A2AC40B0800AA4F42 /* ProductService.swift in Sources */,
+				ECA91A442AC4C28000AA4F42 /* CardCell.swift in Sources */,
 				ECA91A172AC36D2C00AA4F42 /* String+Ext.swift in Sources */,
 				ECA91A1F2AC36F8100AA4F42 /* NetworkManager.swift in Sources */,
 				ECA91A232AC3713600AA4F42 /* APIUrls.swift in Sources */,
