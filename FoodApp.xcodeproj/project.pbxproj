@@ -29,6 +29,11 @@
 		ECA91A3F2AC442A500AA4F42 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */; };
 		ECA91A422AC464C800AA4F42 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECA91A412AC464C800AA4F42 /* SnapKit */; };
 		ECA91A442AC4C28000AA4F42 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A432AC4C28000AA4F42 /* CardCell.swift */; };
+		ECA91A472AC58DBF00AA4F42 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */; };
+		ECA91A492AC5A43200AA4F42 /* AttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A482AC5A43200AA4F42 /* AttributeView.swift */; };
+		ECA91A4B2AC5A44F00AA4F42 /* AddCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */; };
+		ECA91A4D2AC5A46700AA4F42 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */; };
+		ECA91A4F2AC5A48D00AA4F42 /* CardConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,11 @@
 		ECA91A3C2AC427E000AA4F42 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		ECA91A3E2AC442A500AA4F42 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		ECA91A432AC4C28000AA4F42 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		ECA91A482AC5A43200AA4F42 /* AttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeView.swift; sourceTree = "<group>"; };
+		ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartView.swift; sourceTree = "<group>"; };
+		ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +170,7 @@
 		ECA91A2C2AC4111C00AA4F42 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				ECA91A452AC58DB200AA4F42 /* Views */,
 				ECA91A392AC426EB00AA4F42 /* ImageView */,
 				ECA91A2D2AC4112500AA4F42 /* TabBar */,
 				ECA91A302AC411BA00AA4F42 /* ViewController */,
@@ -200,6 +211,18 @@
 				ECA91A3A2AC4271300AA4F42 /* FCImageView.swift */,
 			);
 			path = ImageView;
+			sourceTree = "<group>";
+		};
+		ECA91A452AC58DB200AA4F42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */,
+				ECA91A482AC5A43200AA4F42 /* AttributeView.swift */,
+				ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */,
+				ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */,
+				ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +303,16 @@
 			files = (
 				ECA919FF2AC3375500AA4F42 /* AppDelegate.swift in Sources */,
 				ECA91A2F2AC4114C00AA4F42 /* TabBarController.swift in Sources */,
+				ECA91A4D2AC5A46700AA4F42 /* EmptyStateView.swift in Sources */,
 				ECA91A212AC3706100AA4F42 /* CustomError.swift in Sources */,
 				ECA91A3D2AC427E000AA4F42 /* CacheManager.swift in Sources */,
 				ECA91A3B2AC4271300AA4F42 /* FCImageView.swift in Sources */,
 				ECA91A322AC411D000AA4F42 /* DataLoadingVC.swift in Sources */,
+				ECA91A4B2AC5A44F00AA4F42 /* AddCartView.swift in Sources */,
 				ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */,
+				ECA91A492AC5A43200AA4F42 /* AttributeView.swift in Sources */,
 				ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */,
+				ECA91A472AC58DBF00AA4F42 /* CategoriesView.swift in Sources */,
 				ECA91A252AC3717300AA4F42 /* UIHelper.swift in Sources */,
 				ECA91A2A2AC40B0800AA4F42 /* ProductService.swift in Sources */,
 				ECA91A442AC4C28000AA4F42 /* CardCell.swift in Sources */,
@@ -293,6 +320,7 @@
 				ECA91A1F2AC36F8100AA4F42 /* NetworkManager.swift in Sources */,
 				ECA91A232AC3713600AA4F42 /* APIUrls.swift in Sources */,
 				ECA91A012AC3375500AA4F42 /* SceneDelegate.swift in Sources */,
+				ECA91A4F2AC5A48D00AA4F42 /* CardConfirmView.swift in Sources */,
 				ECA91A1A2AC36E2A00AA4F42 /* Category.swift in Sources */,
 				ECA91A3F2AC442A500AA4F42 /* ProductCell.swift in Sources */,
 				ECA91A1C2AC36E8800AA4F42 /* Product.swift in Sources */,
