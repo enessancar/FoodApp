@@ -31,7 +31,7 @@
 		ECA91A442AC4C28000AA4F42 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A432AC4C28000AA4F42 /* CardCell.swift */; };
 		ECA91A472AC58DBF00AA4F42 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */; };
 		ECA91A492AC5A43200AA4F42 /* AttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A482AC5A43200AA4F42 /* AttributeView.swift */; };
-		ECA91A4B2AC5A44F00AA4F42 /* AddCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */; };
+		ECA91A4B2AC5A44F00AA4F42 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4A2AC5A44F00AA4F42 /* AddCardView.swift */; };
 		ECA91A4D2AC5A46700AA4F42 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */; };
 		ECA91A4F2AC5A48D00AA4F42 /* CardConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */; };
 /* End PBXBuildFile section */
@@ -62,7 +62,7 @@
 		ECA91A432AC4C28000AA4F42 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		ECA91A482AC5A43200AA4F42 /* AttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeView.swift; sourceTree = "<group>"; };
-		ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartView.swift; sourceTree = "<group>"; };
+		ECA91A4A2AC5A44F00AA4F42 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
 		ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,7 +218,7 @@
 			children = (
 				ECA91A462AC58DBF00AA4F42 /* CategoriesView.swift */,
 				ECA91A482AC5A43200AA4F42 /* AttributeView.swift */,
-				ECA91A4A2AC5A44F00AA4F42 /* AddCartView.swift */,
+				ECA91A4A2AC5A44F00AA4F42 /* AddCardView.swift */,
 				ECA91A4C2AC5A46700AA4F42 /* EmptyStateView.swift */,
 				ECA91A4E2AC5A48D00AA4F42 /* CardConfirmView.swift */,
 			);
@@ -308,7 +308,7 @@
 				ECA91A3D2AC427E000AA4F42 /* CacheManager.swift in Sources */,
 				ECA91A3B2AC4271300AA4F42 /* FCImageView.swift in Sources */,
 				ECA91A322AC411D000AA4F42 /* DataLoadingVC.swift in Sources */,
-				ECA91A4B2AC5A44F00AA4F42 /* AddCartView.swift in Sources */,
+				ECA91A4B2AC5A44F00AA4F42 /* AddCardView.swift in Sources */,
 				ECA91A152AC36C3C00AA4F42 /* UILabel+Ext.swift in Sources */,
 				ECA91A492AC5A43200AA4F42 /* AttributeView.swift in Sources */,
 				ECA91A282AC4062100AA4F42 /* CategoryService.swift in Sources */,
