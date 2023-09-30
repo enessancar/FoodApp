@@ -19,7 +19,7 @@ final class AddCardView: UIView {
     private let addToCartButton = UIButton(frame: .zero)
     
     private let product: ProductData!
-    private weak var delegate: AddCardViewDelegate!
+    public weak var delegate: AddCardViewDelegate!
     
     init(product: ProductData!, delegate: AddCardViewDelegate!) {
         self.product = product
