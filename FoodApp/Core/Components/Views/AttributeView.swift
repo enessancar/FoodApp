@@ -13,6 +13,7 @@ final class AttributeView: UIView {
     private var headerLabel: UILabel!
     private var bodyLabel: UILabel!
     
+    //MARK: - Init
     init(headerText: String, bodyText: String) {
         super.init(frame: .zero)
         

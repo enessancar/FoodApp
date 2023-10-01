@@ -38,6 +38,27 @@ final class ProductDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureVC()
+        
+        configureScrollView()
+        configureStackView()
+        
+        configureProductImageView()
+        configureTitleLabel()
+        
+        configureAttributeStackView()
+        configureAttributes()
+        
+        configureDescriptionLabel()
+        configureCardContainerView()
+        
+        checkIfIsInTheCart()
+    }
+}
+
+extension ProductDetailVC {
+    private func checkIfIsInTheCart() {
+        
     }
 }
 

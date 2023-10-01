@@ -21,6 +21,7 @@ final class AddCardView: UIView {
     private let product: ProductData!
     public weak var delegate: AddCardViewDelegate!
     
+    //MARK: - Init
     init(product: ProductData!, delegate: AddCardViewDelegate!) {
         self.product = product
         self.delegate = delegate
@@ -28,7 +29,13 @@ final class AddCardView: UIView {
         
         layer.cornerRadius = 10
         backgroundColor = .systemGray6.withAlphaComponent(0.6)
-        heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        self.snp.makeConstraints { make in
+            make.height.equalTo(100)
+        }
+        
+        configurePriceLabel()
+        configureAddCardButon()
     }
     
     required init?(coder: NSCoder) {
