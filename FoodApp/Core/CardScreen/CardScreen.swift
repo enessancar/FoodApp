@@ -80,7 +80,7 @@ extension CardScreen {
         
         cardConfirmView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-5)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(10)
         }
     }
 }

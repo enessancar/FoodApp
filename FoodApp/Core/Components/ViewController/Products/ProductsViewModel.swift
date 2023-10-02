@@ -93,7 +93,6 @@ class ProductsViewModel {
                 return (p1.price ?? 0) > (p2.price ?? 0)
             }
             self.products.value = tempProducts
-            
         }
     }
 }

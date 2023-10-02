@@ -9,7 +9,13 @@ import Foundation
 
 final class CategoryService {
     
-    public func downloadCategories(urlString: String, completion: @escaping([CategoryData]) -> ()) {
+    let urlString: String
+    
+    init(urlString: String) {
+        self.urlString = urlString
+    }
+    
+    public func downloadCategories(completion: @escaping([CategoryData]) -> ()) {
         guard let url = URL(string: urlString) else { return }
         
         NetworkManager.shared.download(url: url) { [weak self] result in

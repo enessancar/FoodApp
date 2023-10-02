@@ -8,6 +8,11 @@
 import UIKit
 import SnapKit
 
+enum LoadingStatus {
+    case loading
+    case finished
+}
+
 protocol ProductsVCDelegate: AnyObject {
     func loadingStatusChanged(_ status: LoadingStatus)
     func productSelected(_ product: ProductData)
@@ -15,12 +20,14 @@ protocol ProductsVCDelegate: AnyObject {
 
 final class ProductsVC: UIViewController {
     
-    private let viewModel: ProductsViewModel
+    let viewModel: ProductsViewModel
     private var collectionView: UICollectionView!
     private weak var delegate: ProductsVCDelegate!
     
     init(service: ProductService, delegate: ProductsVCDelegate) {
-        
+        viewModel = ProductsViewModel(service: service)
+        super.init(nibName: nil, bundle: nil)
+        self.delegate = delegate
     }
     
     required init?(coder: NSCoder) {
@@ -31,12 +38,14 @@ final class ProductsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        addBinder()
     }
     
     private func addBinder() {
         viewModel.products.bind { [weak self] returnedProducts in
             guard let self else { return }
             
+            self.delegate.loadingStatusChanged(.finished)
             self.collectionView.reloadData()
             self.collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .left, animated: true)
         }
@@ -72,6 +81,7 @@ extension ProductsVC: UICollectionViewDelegate, UICollectionViewDataSource  {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        let product = viewModel.products.value[indexPath.row]
+        delegate.productSelected(product)
     }
 }

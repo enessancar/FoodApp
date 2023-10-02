@@ -42,6 +42,10 @@ final class AddCardView: UIView {
         fatalError()
     }
     
+    func changeButtonTitle() {
+        addToCartButton.setTitle("Remove from Card", for: .normal)
+    }
+    
     private func configurePriceLabel() {
         addSubview(priceLabel)
         

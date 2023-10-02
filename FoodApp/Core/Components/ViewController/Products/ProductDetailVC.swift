@@ -8,7 +8,6 @@
 import UIKit
 import SnapKit
 
-
 final class ProductDetailVC: UIViewController {
     
     private let scrollView = UIScrollView(frame: .zero)
@@ -58,7 +57,18 @@ final class ProductDetailVC: UIViewController {
 
 extension ProductDetailVC {
     private func checkIfIsInTheCart() {
-        
+        ProductStore.retrieveProducts { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let products):
+                if products.contains(where: {$0 == self.product}) {
+                    self.addCardView.changeButtonTitle()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
@@ -166,7 +176,7 @@ extension ProductDetailVC: AddCardViewDelegate {
     }
     
     func addCardButtonAction() {
-        
+        ProductStore.update(product: product)
         navigationController?.popViewController(animated: true)
     }
 }

@@ -10,7 +10,7 @@ import SnapKit
 
 final class CategoriesView: UIStackView {
     
-    private var collectionView: UICollectionView!
+    var collectionView: UICollectionView!
     private var titleLabel = UILabel(frame: .zero)
     
     //MARK: - Init
@@ -32,7 +32,7 @@ final class CategoriesView: UIStackView {
     private func configureStackView() {
         axis = .vertical
         distribution = .fill
-        spacing = 5
+        //spacing = 5
     }
     
     private func configureTitleLabel() {

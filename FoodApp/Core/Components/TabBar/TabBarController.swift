@@ -12,38 +12,36 @@ final class TabBarController: UITabBarController {
     init(service: CategoryService) {
         super.init(nibName: nil, bundle: nil)
         
+        configureTabBar()
+        configureNavigationBar()
+        
+        viewControllers = [createHomeScreen(service: service), createCartScreen()]
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureVC()
+        configureTabBar()
+        configureNavigationBar()
     }
     
-    
-    private func configureVC() {
-        viewControllers = [
-            createNavController(for: <#T##UIViewController#>, title: <#T##String#>, imageName: <#T##String#>)
-        ]
-    }
-    
-    
-    fileprivate func createNavController(for viewController: UIViewController, title: String, imageName: String) -> UIViewController {
+    private func createHomeScreen(service: CategoryService) -> UINavigationController {
+        let homeScreen = HomeScreen(service: service)
+        homeScreen.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
         
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.navigationBar.prefersLargeTitles = true
-        viewController.navigationItem.title = title
-        viewController.view.backgroundColor = .systemBackground
-        navController.tabBarItem.title = title
-        navController.tabBarItem.image = UIImage(systemName: imageName)
-        navController.navigationBar.tintColor = .systemRed
-        return navController
+        return UINavigationController(rootViewController: homeScreen)
     }
-
+    
+    private func createCartScreen() -> UINavigationController {
+        let cardScreen = CardScreen()
+        cardScreen.tabBarItem = UITabBarItem(title: "Card", image: UIImage(systemName: "cart.fill"), tag: 1)
+        
+        return UINavigationController(rootViewController: cardScreen)
+    }
+    
     private func configureTabBar() {
         UITabBar.appearance().tintColor = .systemOrange
         
